@@ -1,0 +1,286 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#LmySidenav a {
+    position: absolute; /* Position them relative to the browser window */
+    left: -80px; /* Position them outside of the screen */
+    transition: 0.3s; /* Add transition on hover */
+    padding: 15px; /* 15px padding */
+    width: 100px; /* Set a specific width */
+    text-decoration: none; /* Remove underline */
+    font-size: 20px; /* Increase font size */
+    color: white; /* White text color */
+    border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+}
+
+#LmySidenav a:hover {
+    left: 0; /* On mouse-over, make the elements appear as they should */
+}
+
+/* The about link: 20px from the top with a green background */
+#Labout {
+    top: 20px;
+    background-color: #262626;
+}
+.LExit-icon{
+    margin:0;
+    padding: 0;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    display: flex;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+.LExit-icon li{
+    width: 20%;
+    text-align: center;
+    list-style: none;
+}
+.LExit-icon li a {
+    display: block;
+    font-size: 18px;
+    color: #fff;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    transition: .5s;
+
+}
+.LSidebar{
+    position: fixed;
+    top:0;
+    Left: -300px;
+    width: 300px;
+    height: 100vh;
+    background: #262626;
+    transition: .5s;
+    text-align: center;
+    box-sizing: border-box;
+}
+.LSidebar.active{
+    left:0;
+}
+.LSidebar .LMenu{
+    margin: 0;
+    padding: 40px 0;
+
+}
+.LSidebar.LMenu li{
+    list-style: none;
+    font-family: sans-serif;
+}
+.LSidebar .LMenu li a{
+    display: block;
+    padding: 10px 0;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+
+}
+.LSidebar .LMenu li a:hover{
+    background: #fc2827;
+    color: #fff
+}
+.LSocial-icon{
+    margin:0;
+    padding: 0;
+    position: absolute;
+    bottom: 40px;
+    left:0;
+    display: flex;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+.LSocial-icon li{
+    width: 20%;
+    text-align: center;
+    list-style: none;
+}
+.LSocial-icon li a {
+    display: block;
+    font-size: 18px;
+    color: #fff;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    transition: .5s;
+
+}
+.LSocial-icon li a:hover {
+    background: #fc2827;
+}
+
+
+
+#RmySidenav a {
+    position: absolute; /* Position them relative to the browser window */
+    Right: -80px; /* Position them outside of the screen */
+    transition: 0.3s; /* Add transition on hover */
+    padding: 15px; /* 15px padding */
+    width: 100px; /* Set a specific width */
+    text-decoration: none; /* Remove underline */
+    text-align: right;
+    font-size: 20px; /* Increase font size */
+    color: white; /* White text color */
+    border-radius: 5px 0 0 5px; /* Rounded corners on the top right and bottom right side */
+}
+
+#RmySidenav a:hover {
+    Right: 0; /* On mouse-over, make the elements appear as they should */
+}
+
+/* The about link: 20px from the top with a green background */
+#Rabout {
+    top: 20px;
+    background-color: #262626;
+}
+.RExit-icon{
+    margin:0;
+    padding: 0;
+    position: absolute;
+    top: 10px;
+    Right: -220px;
+    display: flex;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+.RExit-icon li{
+    width: 20%;
+    text-align: center;
+    list-style: none;
+}
+.RExit-icon li a {
+    display: block;
+    font-size: 18px;
+    color: #fff;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    transition: .5s;
+
+}
+.RSidebar{
+    position: fixed;
+    top:0;
+    Right: -300px;
+    width: 300px;
+    height: 100vh;
+    background: #262626;
+    transition: .5s;
+    text-align: center;
+    box-sizing: border-box;
+}
+.RSidebar.active{
+    Right:0;
+}
+
+
+h10{
+    font-size: 25px;
+}
+#startPause{
+    background-color: green;
+    border-color: green
+}
+#reset{
+    background-color: grey;
+    border-color: grey
+}
+
+.Stopwatches{
+    align-self: center;
+    position: relative; /* Position them relative to the browser window */
+    padding: 5px; /* 10px padding */
+    width: 200px; /* Set a specific width */
+    text-align: center;
+    font-size: 20px; /* Increase font size */
+    color: #262626; /* White text color */
+    border-radius: 5px 5px 5px 5px; /* Rounded corners on the top right and bottom right side */
+    background-color: #fff;
+    top: 50px;
+    left:50px;
+    height: 100px;
+
+}
+
+b,p{
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+/*#timers > * {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #EEE;
+  border: 1px solid #333;
+  position: relative;
+  margin: 15px;
+}
+
+#timers > *:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 3px;
+  width: 3px;
+  border-radius: 50%;
+  background: #666;
+  margin-top: -2px;
+  margin-left: -2px;
+  border: 1px solid #111;
+}
+
+[data-hand] {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background: red;
+  transform-origin: 0 0;
+}
+
+[data-hand="seconds"] {
+  animation: spin 60s linear infinite;
+  background-color: red;
+  width: 38%;
+  height: 1px;
+}
+
+[data-hand="minutes"] {
+  animation: spin 3600s linear infinite;
+  width: 40%;
+  height: 1px;
+  background-color: #222;
+  box-shadow: 0 0 1px black;
+}
+
+[data-hand="hours"] {
+  animation: spin 43200s linear infinite;
+  width: 20%;
+  height: 1px;
+  background-color: #222;
+  box-shadow: 0 0 1px black;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(-90deg);
+  }
+  to {
+    transform: rotate(270deg);
+  }
+}*/
