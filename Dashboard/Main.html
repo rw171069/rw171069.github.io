@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sidebar Menu</title>
+    <link rel="stylesheet" href="Style.css" />
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".Lsidenav").click(function () {
+                $(".LSidebar").toggleClass("active")
+            })
+            $(".LExit-icon").click(function () {
+                $(".LSidebar").toggleClass("active")
+            })
+            $(".Rsidenav").click(function () {
+                $(".RSidebar").toggleClass("active")
+            })
+            $(".RExit-icon").click(function () {
+                $(".RSidebar").toggleClass("active")
+            })
+
+        })
+    </script>
+</head>
+
+<body>
+    <!--<script src="indexx.js"></script>-->
+    <div id="LmySidenav" class="Lsidenav">
+        <a href="#" id="Labout">About</a>
+    </div>
+    <div class="LSidebar">
+        <ul class="LExit-icon">
+            <li>
+                <a href="#">
+                    <i class="fas fa-times-circle"></i>
+                </a>
+            </li>
+        </ul>
+        <a href="#">
+            <img src="Images/WATT AND CO LOGO-1.jpg" style="width:75px;height:100px"> </a>
+
+        <ul class="LMenu">
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">About</a>
+            </li>
+            <li>
+                <a href="#">Services</a>
+            </li>
+            <li>
+                <a href="#">Portfolio</a>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+        </ul>
+        <ul class="LSocial-icon">
+            <li>
+                <a href="#">
+                    <i class="fa fa-facebook-square"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-twitter-square"></i>
+                    </i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-linkedin"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-instagram"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+
+
+
+    <div id="RmySidenav" class="Rsidenav">
+        <a href="#" id="Rabout">About</a>
+    </div>
+    <div class="RSidebar">
+
+
+        <ul class="RExit-icon">
+            <li>
+                <a href="#">
+                    <i class="fas fa-times-circle"></i>
+                </a>
+            </li>
+        </ul>
+        <!--<ul class=Stopwatches>
+            <h10>
+                <b>Title</b>
+                <p id="output">
+                    <b>0:00:00:00</b>
+                </p>
+            </h10>
+            <div id="controls">
+                <button id="startPause" onClick="startPause()" style="height:20px;width:75px">
+                    <b id="start">start</b>
+                </button>
+                <button id="reset" onClick="reset()" style="height:20px;width:75px">
+                    <b id="reset">Reset</b>
+                </button>
+            </div>
+
+        </ul> -->
+
+        <ul class="Timers">
+            <div id="timers">  </div>
+            <button>Add a timer</button>
+            <script src="Script.js"></script>
+        </ul>
+
+    </div>
+
+
+</body>
+
+</html>
