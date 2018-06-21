@@ -1,7 +1,13 @@
+body,html{
+	height:100%;
+}
+
 body { /*  */
     background-image: url("WelcomePage/Images/Background.jpg"); /* Set the background image of the the whole page. */
     background-repeat: no-repeat; /* Makes sure the background image isn't repeated  */
     background-size: cover; /* Sets the background image to cover the whole background of the website */
+	height:100%;
+	
 }
 #Title h1{
     text-align: center; /* Aligns the text to the center of the screen horizontaly */
