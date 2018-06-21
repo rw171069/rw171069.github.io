@@ -1,44 +1,45 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html> <!-- Defines the document type - HTML -->
+<html lang="en"> <!--Tells the browser that this is an HTML document and that the language is English -->
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Home page</title>
-  <link rel="stylesheet" href="Style.css">
-</head>
+<head> <!--Contains all the head elements like scripts, styles and meta info -->
+  <meta charset="UTF-8"> <!--Specifices the  character encoding. UTF-8 is the character encoding for Unicode -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Name specifies the name for the metadata. Viewpoint is the visible area of a web page. Content sets the width as the device with to make sure that it looks nice on all devices. Initial scale sets the zoom level -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"> <!--Supports the webste on Internet explorer. CHECK -->
+  <link rel="stylesheet" href="Style.css"><!-- Defines a link between a document and an external resource. rel= Relationship. stylesheet=Imports a stly sheet. href=specifies the location of a linked document = Style.CSS  -->
+  <title>Home page</title> <!-- Defines a title for the document. The >TEXT< is the actual name of it -->
+</head> <!-- Closes the head -->
 
-<body>
+<body> <!-- Contains all the contents of the HTML document -->
 
-  <div class="container">
-    <div class="split left">
-      <h2>The Client</h2>
-      <a href="#openModal" class="button" id="button">Click for more info</a>
-    </div>
-    <div class="split right">
-      <h2>The Lawyer</h2>
-      <a href="#openModal" class="button" id="button">Click for more info</a>
-    </div>
-    <div class="center">
-      <h1>Watt Legal</h1>
-    </div>
-  </div>
+  <div class="container"> <!-- Defines a section of the document. Class is used to point to a class in the stylesheet. -->
+    <div class="split left"> <!-- Defines a section of the document. Class is used to point to a class in the stylesheet. -->
+      <h2>The Client</h2> <!-- Defines the headings. h1 = most important. h6= Least important. -->
+      <a href="#openModal" class="button" id="button">Click for more info</a>  <!-- <a> defines a hyperlink. HREF specifies the URL of the page the link goes to. Class is used to point to a class in the stylesheet. ID gives it a unique id for JS & CCS. The >TEXT< is the actual name of it -->
+    </div> <!-- Closes the div -->
+    <div class="split right"> <!-- Defines a section of the document. Class is used to point to a class in the stylesheet. -->
+      <h2>The Lawyer</h2> <!-- Defines the headings. h1 = most important. h6= Least important. -->
+      <a href="#openModal" class="button" id="button">Click for more info</a> <!-- <a> defines a hyperlink. HREF specifies the URL of the page the link goes to. Class is used to point to a class in the stylesheet. ID gives it a unique id for JS & CCS. The >TEXT< is the actual name of it -->
+    </div> <!-- Closes the div -->
+    <div class="center"> <!-- Defines a section of the document. Class is used to point to a class in the stylesheet. --> 
+      <h1>Watt Legal</h1> <!-- Defines the headings. h1 = most important. h6= Least important. -->
+    </div> <!-- Closes the div -->
+  </div> <!-- Closes the div -->
 
-  <a href="#openModal">Open Modal</a>
+  <a href="#openModal">Open Modal</a> <!-- <a> defines a hyperlink. HREF specifies the URL of the page the link goes to. The >TEXT< is the actual name of it -->
 
-  <div id="openModal" class="modalDialog">
-    <div>
-      <a href="#close" title="Close" class="close">X</a>
-      <h2>Modal Box</h2>
-      <p>This is a sample modal box that can be created using the powers of CSS3.</p>
+  <div id="openModal" class="modalDialog"> <!-- Defines a section of the document. ID gives it a unique id for JS & CCS. Class is used to point to a class in the stylesheet. -->
+    <div> <!-- Defines a section of the document. -->
+      <a href="#close" title="Close" class="close">X</a> <!-- <a> defines a hyperlink. HREF specifies the URL of the page the link goes to. Class is used to point to a class in the stylesheet. ID gives it a unique id for JS & CCS. The >TEXT< is the actual name of it -->
+      <h2>Modal Box</h2> <!-- Defines the headings. h1 = most important. h6= Least important. -->
+      <p>This is a sample modal box that can be created using the powers of CSS3.</p> <!-- Defines a paragraph -->
       <p>You could do a lot of things here like have a pop-up ad that shows when your website loads, or create a login/register
-        form for users.</p>
-    </div>
-  </div>
+        form for users.</p> <!-- Defines a paragraph -->
+    </div> <!-- Closes the div -->
+  </div> <!-- Closes the div -->
 
 
-  <script src="Script.js"></script>
-</body>
+  <script src="Script.js"></script> <!-- Defines a script. SRC specifies the URL of the scirpt. -->
+</body> <!-- Closes the body -->
 
-</html>
+</html> <!-- Closes the html -->
+
